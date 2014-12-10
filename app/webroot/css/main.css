@@ -31,3 +31,7 @@ h1{
     font-size: 20px;
     text-align: center;
 }
+#content{
+    width: 80%;
+    margin: 0 auto;
+}

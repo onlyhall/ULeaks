@@ -15,7 +15,7 @@
         ?>
     
     <?php echo $this->Html->link($district['District']['name'],
-array('controller' => 'district', 'action' => 'view', $district['District']['id'])); ?>
+array('controller' => 'city', 'action' => 'index', $district['District']['id'])); ?>
     <?php endforeach; ?>
     
     <?php unset($district);

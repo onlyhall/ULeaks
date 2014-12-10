@@ -37,37 +37,37 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	?>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-                    <div class="hood">
-                        <div id="logo">
-                            Лого 
-                        </div>
-                        <ul id="head-menu" class="menu">
-                            <li>Головна</li>
-                            <li>Пошук</li>                        
-                            <li>Випадкрвий вуз</li>                        
-                        </ul>
+    <div id="container">
+            <div id="header">
+                <div class="hood">
+                    <div id="logo">
+                        Лого 
                     </div>
+                    <ul id="head-menu" class="menu">
+                        <li><a href="/ULeaks/district">Головна</a></li>
+                        <li><a>Пошук</a></li>                        
+                        <li><a>Випадкрвий вуз</a></li>                        
+                    </ul>
                 </div>
-		<div id="content">
+            </div>
+            <div id="content">
 
-			<?php echo $this->Session->flash(); ?>
+                    <?php echo $this->Session->flash(); ?>
 
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-				);
-			?>
-			<p>
-				<?php echo $cakeVersion; ?>
-			</p>
-		</div>
-	</div>
+                    <?php echo $this->fetch('content'); ?>
+            </div>
+            <div id="footer">
+                    <?php echo $this->Html->link(
+                                    $this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
+                                    'http://www.cakephp.org/',
+                                    array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
+                            );
+                    ?>
+                    <p>
+                            <?php echo $cakeVersion; ?>
+                    </p>
+            </div>
+    </div>
 	<?php //echo $this->element('sql_dump'); ?>
 </body>
 </html>
