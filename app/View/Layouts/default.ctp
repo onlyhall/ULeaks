@@ -21,15 +21,16 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <html>
 <head>
 	<?php echo $this->Html->charset(); ?>
-	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $this->fetch('title'); ?>
+	<title>     
+		<?php echo $title; ?>
 	</title>
+        <meta charset="utf-8">
 	<?php
 		echo $this->Html->meta('icon');
-
-		echo $this->Html->css('cake.generic');
-
+          
+		echo $this->Html->css('reset'); // 
+                echo $this->Html->css('main'); // подключаем стили. разрешение указывать не надо
+                
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
@@ -38,8 +39,17 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
+                    <div class="hood">
+                        <div id="logo">
+                            Лого 
+                        </div>
+                        <ul id="head-menu" class="menu">
+                            <li>Головна</li>
+                            <li>Пошук</li>                        
+                            <li>Випадкрвий вуз</li>                        
+                        </ul>
+                    </div>
+                </div>
 		<div id="content">
 
 			<?php echo $this->Session->flash(); ?>
@@ -58,6 +68,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			</p>
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<?php //echo $this->element('sql_dump'); ?>
 </body>
 </html>

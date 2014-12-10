@@ -1,0 +1,33 @@
+#container{
+    max-width: 1400px;
+    min-width: 800px;
+    margin: 0 auto;
+}
+#header{
+    width: 100%;
+    height: 80px;
+}
+.hood{
+    width: 80%;
+    margin: 0 auto;
+}
+#logo{
+    float: left;
+    margin-top: 25px;
+    font-size: 20px;
+}
+.menu{
+  
+}
+.menu li{
+    display: inline;
+}
+#head-menu{
+    margin-top: 30px;
+    float: right;
+}
+
+h1{
+    font-size: 20px;
+    text-align: center;
+}
