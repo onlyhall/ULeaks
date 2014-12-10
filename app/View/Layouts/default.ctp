@@ -44,7 +44,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                         Лого 
                     </div>
                     <ul id="head-menu" class="menu">
-                        <li><a href="/ULeaks/district">Головна</a></li>
+                        <li><a href="/uleaks/district">Головна</a></li>
                         <li><a>Пошук</a></li>                        
                         <li><a>Випадкрвий вуз</a></li>                        
                     </ul>
